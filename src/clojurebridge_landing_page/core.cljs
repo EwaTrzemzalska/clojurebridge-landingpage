@@ -11,7 +11,7 @@
 ;; Application state
 ;; define your app data so that it doesn't get over-written on reload
 
-(defonce app-state (atom {:text "Hi everybody" 
+(defonce app-state (atom {:text "Hi stranger" 
                           :another-text "Hello clojure!" 
                           :sponsors {:current {:name "Functional Works"
                                                :logo "images/functional-works-logo.png"
