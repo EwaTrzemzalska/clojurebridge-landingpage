@@ -11,7 +11,7 @@
 ;; Application state
 ;; define your app data so that it doesn't get over-written on reload
 
-(defonce app-state (atom {:text "Hi world!" 
+(defonce app-state (atom {:text "Hi everybody" 
                           :another-text "Hello clojure!" 
                           :sponsors {:current {:name "Functional Works"
                                                :logo "images/functional-works-logo.png"
@@ -26,7 +26,8 @@
    [:div {:class "box"}
     [:div {:class "column is-half is-8 is-offset-2"}
      [:a {:href (get-in sponsor-details [:current :website])}
-      [:h3 {:class "title is-5 has-text-centered"} (str "Our sponsors: " (get-in sponsor-details [:current :name]))]]
+      [:h3 {:class "title is-5 has-text-centered"} (str "Our sponsors: " (get-in sponsor-details [:current :namequit
+                                                                                                  ]))]]
      [:div {:class "columns"}
       [:div {:class "column"}
        [:figure {:class "image"}
