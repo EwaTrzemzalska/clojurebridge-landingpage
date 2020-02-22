@@ -1,0 +1,5 @@
+^{:watch-dirs ["test" "src"]
+  :css-dirs ["resources/public/css"]
+  :auto-testing true}
+{:main clojurebridge-landing-page.core
+ :output-to "docs/cljs-out/dev-main.js"}
